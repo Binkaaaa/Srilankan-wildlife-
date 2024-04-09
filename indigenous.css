@@ -1,0 +1,374 @@
+/*indigenous page*/
+#indighdr{
+    background-image: url(images/indigenous\ animals\ bg.jpg);
+    background-color: rgba(255, 255, 255, 0.9);
+    min-height: 580px;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
+  }
+  
+  .indigenous{
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .ind p{ 
+    padding-top: 90px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 100px;
+    font-size: 33px;
+    font-weight: 300;
+    line-height: 50px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .ind_box{
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: rgb(30, 67, 33);
+    margin-bottom: 50px;
+  }
+  
+  .ind_box h3{
+    align-items: center;
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    padding-left: 320px;
+  }
+  
+  .ind_box p{
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    padding-left: 230px;
+  }
+  
+  .indigenous-container{
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+    margin: auto;
+  }
+  
+  /* Card 1 */
+  .ind-1{
+    display: flex;
+    background-color: rgba(63, 65, 64, 0.6);
+    margin-top: 25px;
+    transition: all 2s;
+    border-radius: 15px;
+  
+  }
+  
+  .ind-image-1{
+    width: 30%;
+  }
+  
+  .ind-image-1 img{
+    width: 120%;
+    min-height: 100%;
+  }
+  
+  .ind-text-1{
+    width: 70%;
+    padding: 60px;
+  }
+  
+  .ind-text-1 h4{
+    font-size: 36px;
+    padding-left: 70px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    padding-bottom: 20px;
+  }
+  
+  .ind-text-1 p{
+    font-size: 16px;
+    padding-left: 70px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+  }
+  
+  .ind-text-1 .indi-text_btn {
+    margin-top: 20px;
+  }
+  
+  .ind-text-1 .indi-text_btn a {
+    padding: 10px 20px;
+    background-color: rgb(55, 98, 62);
+    color: white;
+    border-radius: 5px;
+    font-size: 24px;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 70px;
+  }
+  
+  .ind-text-1 .indi-text_btn a:hover {
+    background-color: rgb(70, 71, 70);
+  }
+  
+  #indigenoushdr{
+    background-image: url(images/leopard\ backg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.5); 
+    margin-bottom: 70px;
+  }
+  
+  .indi {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  
+  .indi h4{
+    font-size: 66px;
+    padding-left: 480px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+  }
+  
+  .indi p{
+    font-size: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  .indi .indi-Box {
+    margin-top: 20px;
+  }
+  
+  .indi .indi-Box a {
+    padding: 10px 20px;
+    background-color: rgb(55, 98, 62);
+    color: white;
+    border-radius: 5px;
+    font-size: 24px;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 699px;
+  }
+  
+  .indi .indi-Box a:hover {
+    background-color: rgb(70, 71, 70);
+  }
+  
+  /* Card 2 */
+  
+  .ind-2{
+    display: flex;
+    background-color: rgba(31, 92, 44, 0.6);
+    margin-top: 25px;
+    transition: all 2s;
+    border-radius: 15px ;
+    margin-bottom: 100px;
+    padding-right: 50px;
+  }
+  
+  .ind-image-2{
+    width: 30%;
+    order: 2;
+  }
+  
+  .ind-image-2 img{
+    width: 120%;
+    min-height: 100%;
+  }
+  
+  .ind-text-2{
+    width: 65%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    order: 1;
+  }
+  
+  .ind-text-2 h4{
+    font-size: 36px;
+    padding-left: 40px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    padding-bottom: 20px;
+  }
+  
+  .ind-text-2 p{
+    font-size: 16px;
+    padding-left: 40px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+  }
+  
+  .ind-text-2 .indi-text_btn {
+    margin-top: 20px;
+  }
+  
+  .ind-text-2 .indi-text_btn a {
+    padding: 10px 20px;
+    background-color: rgb(55, 98, 62);
+    color: white;
+    border-radius: 5px;
+    font-size: 24px;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 40px;
+  }
+  
+  .ind-text-2 .indi-text_btn a:hover {
+    background-color: rgb(70, 71, 70);
+  }
+  
+  @media(max-width: 768px){
+    .ind-1{
+      display: flex;
+      background-color: rgba(0,0,0,0.2);
+      border-radius: 5px ;
+      margin-top: 25px;
+      flex-direction: column;
+  
+    }
+    
+    .ind-image-1{
+      width: 30%;
+    }
+    
+    .ind-image-1 img{
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 0;
+    }
+    
+    .ind-text-1{
+      width: 70%;
+      padding: 60px;
+    }
+    .ind-2{
+      display: flex;
+      background-color: rgba(0,0,0,0.2);
+      border-radius: 5px ;
+      margin-top: 25px;
+      flex-direction: column;
+    }
+    
+    .ind-image-2{
+      width: 30%;
+      order: 2;
+    }
+    
+    .ind-image-2 img{
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 0;
+    }
+    
+    .ind-text-2{
+      width: 70%;
+      padding: 60px;
+      order: 2;
+    }
+    
+  } 
+  
+  
+
+@media only screen and (max-width: 768px) {
+  .indigenous {
+    padding-top: 30px;
+  }
+
+  .ind p {
+    padding: 20px;
+    padding-bottom: 30px;
+  }
+
+  .ind_box h3 {
+    padding-left: 70px;
+    font-size: 28px;
+  }
+
+  .ind_box p {
+    padding-left: 50px;
+    font-size: 15px;
+    padding-right: 50px;
+    padding-top: 20px;
+  }
+
+  .indigenous-container {
+    width: 90%;
+  }
+
+  /* Card 1 */
+  .ind-1,
+  .ind-2 {
+    flex-direction: column;
+  }
+
+  .ind-image-1,
+  .ind-image-2 {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .ind-text-1,
+  .ind-text-2 {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .ind-text-1 h4,
+  .ind-text-2 h4 {
+    font-size: 24px;
+    padding-left: 10px;
+  }
+
+  .ind-text-1 p,
+  .ind-text-2 p {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+
+  .indi-text_btn a,
+  .indi-Box a {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  /* Header background image */
+  #indighdr,
+  #indigenoushdr {
+    background-size: cover;
+  }
+
+  .indi h4 {
+    font-size: 32px;
+    padding-left: 20px;
+  }
+
+  .indi p {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .indi-Box a {
+    display: none;
+  }
+
+}
+
+ 
+  
+  
+  
+  
+  

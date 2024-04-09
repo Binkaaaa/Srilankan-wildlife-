@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="leopards.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,800;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>Wildlife in Sri Lanka</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="main.js"></script>
+</head>
+<!--The three sub-sections-->   
+<body>
+<!--Background picture and the navigation bar belongs to this section.-->
+    <section class="header" id="lpdhdr">
+        <nav class="sticky">
+            <section class="logo">
+            <a href="index.html"><img src="images/flora--fauna-high-resolution-logo-transparent.png" alt="logo"></a>
+            </section>
+            <hr class="separator">
+            <section class="topnav"><b>
+                <a href="index.html">Home</a>
+                <a href="introduction.html">Introduction </a>
+                <a href="conserve.html"> Conservation</a>
+                <section class="dropdown">
+                    <button class="dropbtn"><a class="active" href= #><b>Animals ▾</b></a></button>
+                    <section class="dropdown-content">
+                      <a href="indigenous.html"> Indigenous Animals </a>
+                      <a href="leopards.html">Leopards</a>
+                    </section>  
+                </section>
+                <section class="dropdown">
+                    <button class="dropbtn"><a href= #><b>National Parks ▾</b></a></button>
+                    <section class="dropdown-content">
+                      <a href="yala.html">Yala Park</a>
+                      <a href="wilpaththu.html">Wilpaththu Park</a>
+                    </section>
+                </section>
+            <a href="contact.html" id="button">Contact</a>
+        </b></section>
+        <section class="login"><b>
+            <a href="login.html"> Login</a>
+        </b></section>
+    </nav>
+    </section>
+<!--three venues where Leopard is found -->
+    <div x-data = "leopardData">
+        <section class="venues">
+            <h3 x-text ="venuesIntro" contenteditable="false"></h3>
+            <p x-text ="venuesDescription" contenteditable="false"></p>
+            <section class="venues-image"> 
+                <section class="venues-box">
+                    <img src="images/leopard flex 1 (1).jpg" alt="Image 1">
+                    <section class="overlay">
+                        <p x-text="overlay1" contenteditable="false"></p>
+                    </section>
+                </section>
+                <section class="venues-box">
+                    <img src="images/leopard flex 2 (1).jpg" alt="Image 2">
+                    <section class="overlay">
+                        <p x-text="overlay2" contenteditable="false"></p>
+                    </section>
+                </section>
+                <section class="venues-box">
+                    <img src="images/leopard flex 3 (1).jpg" alt="Image 3">
+                    <section class="overlay">
+                        <p x-text="overlay3" contenteditable="false"></p>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="facts_leopard_1">
+            <p x-text ="leoFacts1" contenteditable="false"></p>
+        </section>
+        <section class="facts_leopard_2">
+            <p x-text ="leoFacts2" contenteditable="false"></p>
+        </section>
+        <section class="threats_leopards">
+            <section class="threat_1">
+                <img src="images/Habitat Loss and Fragmentation icon.jpg" alt="Habitat Loss">
+                <h2 x-text ="threat1Title" style="padding-top: 80px;" contenteditable="false"></h2>
+                <p x-text = "threat1Description" contenteditable="false"></p>
+                <p x-text = "threat1Consequences" contenteditable="false"></p>
+                <p x-text = "threat1Reduce" contenteditable="false"></p>
+                <ul> 
+                    <template x-for="item in ReduceThreat">
+                        <li x-text="item" contenteditable="false"></li>
+                    </template>
+                </ul>
+                <p x-text ="map1" style="padding-bottom: 40px;" contenteditable="false"></p>
+                <a href="http://www.wwct.org/" target="_blank"> The Wilderness and Wildlife Conservation Trust (WWCT)</a>
+                <img src="images/Habitat Loss and Fragmentation.jpg" alt="Habitat Loss">
+            </section>
+            <section class="threat_2">
+                <img src="images/Poaching and Illegal Wildlife Trade.webp" alt="Poaching">
+                <h2 x-text ="threat2Title" contenteditable="false"></h2>
+                <p x-text = "threat2Description" contenteditable="false"></p>
+                <p x-text="threat2Consequences" contenteditable="false"></p>
+                <p x-text="threat2Reduce" contenteditable="false"></p>
+                <ul> 
+                    <template x-for="item in poaching">
+                        <li x-text="item" contenteditable="false"></li>
+                    </template>
+                </ul>
+                <p x-text ="map2" style="padding-bottom: 40px;" contenteditable="false"></p>
+                <a href="https://www.dwc.gov.lk/" target="_blank">Department of Wildlife Conservation Sri Lanka</a>
+                <img src="images/poaching.jpg" alt="Habitat Loss" width="80%">
+            </section>
+        </section>
+    </div>
+
+    <script>
+        const leopardData ={
+            "venuesIntro": '',
+            "venuesDescription": '',
+            "overlay1": '',
+            "overlay2": '',
+            "overlay3": '',
+            "leoFacts1": '',
+            "leoFacts2": '',
+            "threat1Title" : '',
+            "threat1Description" : '',
+            "threat1Consequences" : '',
+            "threat1Reduce" : '',
+            "ReduceThreat" : [],
+            "map1" : '' ,
+            "threat2Title" : '',
+            "threat2Description" : '',
+            "threat2Consequences" : '',
+            "threat2Reduce" : '',
+            "poaching" : [],
+            "map2" : ''
+
+        };
+        fetch ('leopard.json')
+        .then ( response => response.json())
+        .then (data => {
+            leopardData.venuesIntro = data.venuesIntro;
+            leopardData.venuesDescription = data.venuesDescription;
+            leopardData.overlay1 = data.overlay1;
+            leopardData.overlay2 = data.overlay2;
+            leopardData.overlay3 = data.overlay3;
+            leopardData.leoFacts1 = data.leoFacts1;
+            leopardData.leoFacts2 = data.leoFacts2;
+            leopardData.threat1Title = data.threat1Title;
+            leopardData.threat1Description = data.threat1Description;
+            leopardData.threat1Consequences = data.threat1Consequences;
+            leopardData.threat1Reduce = data.threat1Reduce;
+            leopardData.ReduceThreat = data.ReduceThreat;
+            leopardData.map1 = data.map1;
+            leopardData.threat2Title = data.threat2Title;
+            leopardData.threat2Description = data.threat2Description;
+            leopardData.threat2Consequences = data.threat2Consequences;
+            leopardData.threat2Reduce = data.threat2Reduce;
+            leopardData.poaching = data.poaching ; 
+            leopardData.map2 = data.map2;
+            
+            const jsonDataString = JSON.stringify(leopardData);
+
+            localStorage.setItem("leopardData",jsonDataString);
+
+            let leopardDataData = JSON.parse(localStorage.getItem("leopardData"));
+
+            console.log(leopardDataData);
+        })
+
+        .catch (error => console.error(' Error fetching data;',error));
+
+
+
+    </script>
+</body>
+</html>
+
+
+<button class="edit-button" onclick="toggleEditing()">Edit Text</button>
+<button class="save-button" onclick="saveChanges()">Save Changes</button>
+
+<script src="main.js"></script>
+
+<!-- Footer -->
+    <footer> 
+        <section class="container">
+            <section class="footer-content">
+                <h2 style="padding-bottom: 50px;"> Contact Us</h2>
+                <p> <b style="font-size: 20px;">Email:</b> dg@dwc.gov.lk</p>
+                <p> <b style="font-size: 20px;">Phone:</b> +94 11 2 888 585 </p>
+                <p> <b style="font-size: 20px;">Address:</b><br>  Department of Wildlife Conservation,
+                                                <br>811A, Jayanthipura,
+                                                <br>Battaramulla, Sri Lanka.
+                </p>
+            </section>
+            <section class="footer-content">
+            <h2> References </h2>
+            <ul class="list" style="font-size: 17px;">
+            <li><a href="https://srilankaunbound.com.au/blog/category/wildlife/" target="_blank">Sri Lankan Bound website</a></li>
+            <li><a href="https://www.srilankansafari.com/safari-blog.php" target="_blank">Sri Lankan Safari website</a></li>
+            <li><a href="https://www.pettitts.co.uk/blog/sri-lanka-wildlife" target="_blank">Petitts website</a></li>
+            <li><a href="https://www.srilankainstyle.com/blog/top-10-sri-lanka-wildlife-experiences" target="_blank">Sri Lanka in Style</a></li>
+            </ul>
+        </section>
+    </section>
+    <section class="main-newsletter">
+        <section class="side-newsletter">
+        <section class="container_newsletter">
+            <a href="#" class="newsletter-btn">Newsletter</a>
+            <section class="newsletter">
+                <section class="newsletter-body">
+                    <p style="  margin-left: 160px; "><u>NEWSLETTER</u></p>
+                </section>
+                <section class="newsletter-body-sentence">
+                    <p style=" margin-top: -20px;"> Subscribe to our newsletter for updates and to know more information</p>
+                </section>
+                <div x-data="{ email: '', subscriptions: [] }" x-init="subscriptions = JSON.parse(localStorage.getItem('newsletterSubscriptions')) || []">
+                    <section class="newsletter-form">
+                      <form @submit.prevent="
+                        subscriptions.push(email);
+                        localStorage.setItem('newsletterSubscriptions', JSON.stringify(subscriptions));
+                        email = '';
+                        alert('You have been subscribed successfully!');
+                      ">
+                        <input type="email" x-model="email" placeholder="Enter your email.." required>
+                        <button type="submit">Subscribe</button>
+                      </form>
+                    </section>
+                  </div>
+                <a href="#" class="newsletter-close-btn"> You can unsubscribe at any time</a>
+            </section>
+        </section>
+        </section>
+        <section class="social-icons">
+            <a class="btn" href="https://www.facebook.com/" target="_blank"><iconify-icon icon="ic:baseline-facebook"></iconify-icon></a>
+            <a class="btn" href="https://www.instagram.com/" target="_blank"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+            <a class="btn" href="https://www.twitter.com/" target="_blank"><iconify-icon icon="mdi:twitter"></iconify-icon></iconify-icon></a>
+            <a class="btn" href="https://www.youtube.com/" target="_blank"><iconify-icon icon="mdi:youtube"></iconify-icon></a>
+        </section>
+    </footer>
+    </div>
+    <script src="main.js"></script> 
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="wilpaththu.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,800;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>Wildlife in Sri Lanka</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="main.js"></script>
+</head>
+<!-- The three sub-sections -->   
+<body>
+<!-- logo and the navigation bar -->
+    <section class="header" id="wilhdr">
+        <nav class="sticky">
+            <section class="logo">
+            <a href="index.html"><img src="images/flora--fauna-high-resolution-logo-transparent.png" alt="logo"></a>
+            </section>
+            <hr class="separator">
+            <section class="topnav"><b>
+                <a href="index.html">Home</a>
+                <a href="introduction.html">Introduction </a>
+                <a href="conserve.html"> Conservation</a>
+                <section class="dropdown">
+                    <button class="dropbtn"><a href= #><b>Animals ▾</b></a></button>
+                    <section class="dropdown-content">
+                      <a href="indigenous.html"> Indigenous Animals </a>
+                      <a href="leopards.html">Leopards</a>
+                    </section>  
+                </section>
+                <section class="dropdown">
+                    <button class="dropbtn"><a class="active" href= #><b>National Parks ▾</b></a></button>
+                    <section class="dropdown-content">
+                      <a href="yala.html">Yala Park</a>
+                      <a href="wilpaththu.html">Wilpaththu Park</a>
+                    </section>
+                </section>
+            <a href="contact.html" id="button">Contact</a>
+        </b></section>
+        <section class="login"><b>
+            <a href="login.html"> Login</a>
+        </b></section>
+    </nav>
+    </section>
+
+    <div x-data="wilpaththuData">
+        <section class="wilpaththu">
+            <blockquote contenteditable="false"><b class="symbol">"</b> Wilpattu National Park is not only known for its diverse wildlife but also for its historical significance, with ancient ruins dating back to the 4th century BCE.<b class="symbol">"</b></blockquote>
+            <img src="images/wilpaththu national park.jpg" alt="Wilpaththu National Park">
+        </section>
+        <section class="wilpaththu_content">
+        <section class="section_1">
+            <p x-text="text1" contenteditable="false"> </p>
+        </section>
+        <section class="section_2">
+            <p x-text="text2" contenteditable="false"></p>
+        </section>
+        </section>
+        <section class="wilpaththu_animals">
+            <h3 x-text="question1" contenteditable="false"></h3>
+            <section class="wilpaththu-image">
+                <section class="wilpaththu-box">
+                    <img src="images/wilpaththu deer 1.jpg" alt="spotted deer">
+                    <section class="overlay">
+                        <p x-text="animal1" contenteditable="false"></p>
+                    </section>
+                </section>
+                <section class="wilpaththu-box">
+                    <img src="images/wilpaththu Little grebe (1).jpg" alt="little grebe">
+                    <section class="overlay">
+                        <p x-text="animal2" contenteditable="false"></p>
+                    </section>
+                </section>
+                <section class="wilpaththu-box">
+                    <img src="images/wilpaththu elephant (1).jpg" alt="elephant">
+                    <section class="overlay">
+                        <p x-text="animal3" contenteditable="false"></p>
+                    </section>
+                </section>
+            </section>
+            <section class="wilpaththu-image">
+                <section class="wilpaththu-box">
+                    <img src="images/wilpaththu sloth bear (1).webp" alt="sloth bear">
+                    <section class="overlay">
+                        <p x-text="animal4" contenteditable="false"></p>
+                    </section>
+                </section>
+                <section class="wilpaththu-box">
+                    <img src="images/wilpaththu Mongoose (1).jpg" alt="Mongoose">
+                    <section class="overlay">
+                        <p x-text="animal5" contenteditable="false"></p>
+                    </section>
+                </section>
+                <section class="wilpaththu-box">
+                    <img src="images/wilpaththu Pompadour green pigeon (1).jpg" alt="pigeon">
+                    <section class="overlay">
+                        <p x-text="animal6" contenteditable="false"></p>
+                    </section>
+                </section>
+            </section>
+            <section class="wilpaththu-image">
+                <section class="wilpaththu-box">
+                    <img src="images/wilpaththu jounglefowl (1).jpg" alt="junglefowl">
+                    <section class="overlay">
+                        <p x-text="animal7" contenteditable="false"></p>
+                    </section>
+                </section>
+                <section class="wilpaththu-box">
+                    <img src="images/wilpaththu grey-langur (1).jpg" alt="grey-langur">
+                    <section class="overlay">
+                        <p x-text="animal8" contenteditable="false"></p>
+                    </section>
+                </section>
+                <section class="wilpaththu-box">
+                    <img src="images/wilpaththu Painted stork (1).jpg" alt="Painted stork">
+                    <section class="overlay">
+                        <p x-text="animal9" contenteditable="false"></p>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="wilpaththu_map">
+            <h3 x-text="map" contenteditable="false"></h3>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d505153.2015998011!2d79.70708348661616!3d8.449741952813257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afdac7787e4bc27%3A0xcdd9a0715dad187c!2sWilpattu%20National%20Park!5e0!3m2!1sen!2slk!4v1705416686178!5m2!1sen!2slk" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </section>
+
+
+    </div>
+
+
+    <script>
+        const wilpaththuData ={
+            "text1" : '',
+            "text2" : '', 
+            "question1" : '',
+            "animal1" : '',
+            "animal2" : '',
+            "animal3" : '',
+            "animal4" : '',
+            "animal5" : '',
+            "animal6" : '',
+            "animal7" : '',
+            "animal8" : '',
+            "animal9" : '',
+            "map" : ''
+        };
+
+        fetch ('wilpaththu.json') 
+        .then (response => response.json())
+        .then (data => {
+            wilpaththuData.text1 =data.text1;
+            wilpaththuData.text2 = data.text2;
+            wilpaththuData.question1 = data.question1;
+            wilpaththuData.animal1 = data.animal1;
+            wilpaththuData.animal2 = data.animal2;
+            wilpaththuData.animal3 = data.animal3;
+            wilpaththuData.animal4 = data.animal4;
+            wilpaththuData.animal5 = data.animal5;
+            wilpaththuData.animal6 = data.animal6;
+            wilpaththuData.animal7 = data.animal7;
+            wilpaththuData.animal8 = data.animal8;
+            wilpaththuData.animal9 = data.animal9;
+            wilpaththuData.map = data.map;
+
+
+            const jsonDataString = JSON.stringify(wilpaththuData);
+
+            localStorage.setItem("wilpaththuData",jsonDataString);
+
+            let wilpaththuDataData = JSON.parse(localStorage.getItem("wilpaththuData"));
+
+            console.log(wilpaththuDataData);
+        })
+
+        .catch (error => console.error('Error fetching data:', error));
+    </script>
+
+
+    <button class="edit-button" onclick="toggleEditing()">Edit Text</button>
+    <button class="save-button" onclick="saveChanges()">Save Changes</button>
+
+    <script src="main.js"></script>
+
+    
+    <!-- Footer -->
+    <footer> 
+        <section class="container">
+            <section class="footer-content">
+                <h2 style="padding-bottom: 50px;"> Contact Us</h2>
+                <p> <b style="font-size: 20px;">Email:</b> dg@dwc.gov.lk</p>
+                <p> <b style="font-size: 20px;">Phone:</b> +94 11 2 888 585 </p>
+                <p> <b style="font-size: 20px;">Address:</b><br>  Department of Wildlife Conservation,
+                                                <br>811A, Jayanthipura,
+                                                <br>Battaramulla, Sri Lanka.
+                </p>
+            </section>
+            <section class="footer-content">
+            <h2> References </h2>
+            <ul class="list" style="font-size: 17px;">
+            <li><a href="https://srilankaunbound.com.au/blog/category/wildlife/" target="_blank">Sri Lankan Bound website</a></li>
+            <li><a href="https://www.srilankansafari.com/safari-blog.php" target="_blank">Sri Lankan Safari website</a></li>
+            <li><a href="https://www.pettitts.co.uk/blog/sri-lanka-wildlife" target="_blank">Petitts website</a></li>
+            <li><a href="https://www.srilankainstyle.com/blog/top-10-sri-lanka-wildlife-experiences" target="_blank">Sri Lanka in Style</a></li>
+            </ul>
+        </section>
+    </section>
+    <section class="main-newsletter">
+        <section class="side-newsletter">
+        <section class="container_newsletter">
+            <a href="#" class="newsletter-btn">Newsletter</a>
+            <section class="newsletter">
+                <section class="newsletter-body">
+                    <p style="  margin-left: 160px; "><u>NEWSLETTER</u></p>
+                </section>
+                <section class="newsletter-body-sentence">
+                    <p style=" margin-top: -20px;"> Subscribe to our newsletter for updates and to know more information</p>
+                </section>
+                <div x-data="{ email: '', subscriptions: [] }" x-init="subscriptions = JSON.parse(localStorage.getItem('newsletterSubscriptions')) || []">
+                    <section class="newsletter-form">
+                      <form @submit.prevent="
+                        subscriptions.push(email);
+                        localStorage.setItem('newsletterSubscriptions', JSON.stringify(subscriptions));
+                        email = '';
+                        alert('You have been subscribed successfully!');
+                      ">
+                        <input type="email" x-model="email" placeholder="Enter your email.." required>
+                        <button type="submit">Subscribe</button>
+                      </form>
+                    </section>
+                  </div>
+                <a href="#" class="newsletter-close-btn"> You can unsubscribe at any time</a>
+            </section>
+        </section>
+        </section>
+
+        <section class="social-icons">
+            <a class="btn" href="https://www.facebook.com/" target="_blank"><iconify-icon icon="ic:baseline-facebook"></iconify-icon></a>
+            <a class="btn" href="https://www.instagram.com/" target="_blank"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+            <a class="btn" href="https://www.twitter.com/" target="_blank"><iconify-icon icon="mdi:twitter"></iconify-icon></iconify-icon></a>
+            <a class="btn" href="https://www.youtube.com/" target="_blank"><iconify-icon icon="mdi:youtube"></iconify-icon></a>
+        </section>
+    </footer>
+    </div>
+    <script src="main.js"></script> 
+</body>
+</html>

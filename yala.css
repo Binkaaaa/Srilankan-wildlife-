@@ -1,0 +1,978 @@
+/*Every webpage have these styling */
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.header{
+  background-position: center;
+  display: flex;
+  background-size: cover; 
+  overflow: hidden;
+}
+
+/*navigation bar*/
+nav{
+  display: flex;
+  padding: 1% 3%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  position: fixed;
+  background-attachment: fixed;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  z-index: 1000;
+  right: -40px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+nav img {
+    width: 130px;
+    height: 40px;
+}
+
+nav button{
+  background-color: rgb(48, 90, 51);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+#button{
+  color: white;
+  border-radius: 50px;
+  background-color: rgb(48, 90, 51);
+}
+
+#button:hover{
+  background-color:#1f1e1e;
+  transition: .5s;
+}
+
+.sticky{
+  width: 100%;
+}
+
+.topnav{
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1; 
+  padding-left: 30px;
+} 
+
+.topnav a {
+  font-size: 17px; 
+}
+
+.separator {
+    border-left: 1px solid #ccc; 
+    height: 55px;
+    margin: 0 20px; 
+}
+
+.topnav a, .login a {
+    float: left;
+    display: flex;
+    color: rgb(9, 89, 44);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover, .login a:hover {
+    background-color: #5d5757;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.topnav a.active {
+    background-color: rgb(48, 90, 51);
+    color: white;
+}
+
+.login{
+    font-size: 22px;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: 'Playfair Display', serif;
+  padding-left: -4%;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: rgb(9, 89, 44);
+  background-color: inherit;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d2d7dce8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(9, 89, 44);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #5d5757;
+  color:  white ;
+  transition: .5s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Responsive */ 
+
+
+@media only screen and (max-width: 768px){
+
+  .header
+  .introduction
+  .intro.col,
+  .facts
+  .facts img,
+  .facts .text-box,
+  .orderlist,
+  .para img
+  .references {
+    width: 100%;
+  }
+  nav{
+    padding-left: 70%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  nav img{
+    width: 15%;
+    height: 5%;
+  }
+  .topnav{
+    display: none;
+  }
+
+}
+@media only screen and (max-width: 768px) {
+  .topnav {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .topnav a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+@media only screen and (max-width: 2560px){
+  .sticky img{
+    padding-left: 20px;
+  }
+}
+
+/* yala park */
+#yalahdr{
+    background-image: url(images/yala\ backg.jpg);
+    background-color: rgba(255, 255, 255, 0.9);
+    min-height: 580px;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
+  }
+
+
+.yala_content{
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.yala_content h3{
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.yala_content img{
+  width: 65%;
+  padding-top: 70px;
+}
+
+.parent{
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.child{
+  background-size: cover;
+  transition: all 1.1s;
+  border-radius: 5px;
+}
+
+.parent:hover .child{
+  transform: scale(1.2);
+  z-index: 2;
+  transition: .5s;
+}
+
+
+.sections{
+  display: flex;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 6px;
+  font-weight: 300;
+  font-style: italic;
+
+}
+
+.section_1, .section_2{
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  width: 50%;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 28px;
+  word-spacing: 2px;
+
+}
+
+.section_1, .section_2 p{
+  padding: 50px 50px 50px 50px;
+  text-align: justify;
+}
+
+@media (min-width: 780px){
+  .sections{
+    display: flex;
+  }
+}
+
+#yalaparkhdr{
+  background-image: url(images/yala\ bg\ bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.7); 
+}
+
+.yala{
+   padding: 100px 20px 100px 20px;
+   margin-top: 50px;
+}
+
+.yala h3{
+  padding: 0px 0px 0px 0px;
+  font-family: 'Playfair Display', serif;
+  font-size: 70px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+}
+.yala p{
+  padding: 80px 200px 0px 200px;
+  font-size: 26px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  line-height: 40px;
+ 
+}
+
+.symbol{
+  font-size: 40px;
+}
+.yala_animals{
+  padding: 100px 100px 50px 100px;
+}
+.yala_animals h3{
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+  padding-left: 10px;
+  margin-bottom: 50px;
+}
+
+.yala_animals h3:hover {
+  color: rgb(9, 89, 44); 
+  cursor: pointer;
+  position: relative;
+}
+
+.yala_animals h3:hover::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(9, 89, 44);
+  position: absolute;
+  top: 100%;
+  animation: underline-animation 0.3s ease-in-out forwards;
+}
+
+
+.yala-image {
+  display: flex;
+}
+
+.yala-box {
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+  transition: border 0.3s ease;
+}
+.yala-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.overlay p{
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-weight: bolder;
+  font-size: 160%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.yala-box:hover {
+  box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: .7s;
+}
+
+
+.yala-box:hover .overlay {
+  opacity: 1;
+  transform: scale(1); 
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .yala-box {
+      width: 100%;
+  }
+}
+
+
+
+.yala_map {
+  align-items: center;
+  margin-bottom: 100px; 
+  margin: 100px;
+  margin-top: 100px;
+  font-size: 38px;
+  font-family: 'Playfair Display', serif;
+}
+
+.yala_map h3:hover {
+  color: rgb(9, 89, 44); 
+  cursor: pointer;
+  position: relative;
+}
+
+.yala_map h3:hover::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(9, 89, 44);
+  position: absolute;
+  top: 100%;
+  animation: underline-animation 0.3s ease-in-out forwards;
+}
+
+.yala_map p{
+  padding-left:10px;
+  padding-top: 50px;
+}
+
+
+/* Styles for the newsletter form */
+.main-newsletter {
+  text-align: center;
+  background-color: rgb(239, 255, 237);
+  padding: 20px; 
+  margin-top: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(42, 42, 42, 0.5);
+
+}
+.newsletter-btn {
+  display: none; 
+}
+.newsletter {
+  display: inline-block; 
+  padding: 20px;
+  margin-top: 30px; 
+}
+.newsletter-body p {
+  font-weight: bolder;
+  margin-bottom: 0; 
+  color: black;
+  font-size: 40px;
+  margin-left: 130px;
+}
+.newsletter-body-sentence p {
+  color: black; 
+  text-align: center;
+  margin-bottom: 0; 
+  margin-left: 50px;
+  margin-top: 40px;
+}
+.newsletter-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.newsletter-form button[type="submit"] {
+  background-color: rgb(48, 90, 51);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+.newsletter-form button[type="submit"]:hover {
+  background-color: rgb(48, 90, 51);
+}
+.newsletter-close-btn {
+  display: block;
+  margin-top: 10px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  background-color: rgba(15, 58, 13,0.8);
+  min-height: 440px;
+  margin-top: 0px ;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  background-color:#374f33;
+  overflow: hidden;
+  position: relative;
+}
+
+footer p {
+  margin: 2px 0;
+  padding-right: 100px;
+  color: #fff;
+  line-height: 30px;
+}
+
+footer h2{
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif; ;
+  font-size: 30px;
+
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.list li {
+  margin-bottom: 8px;
+}
+
+.footer-content {
+  animation: fadeIn 1s ease-out;
+}
+
+.list li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.list li a:hover {
+  color: rgb(0, 0, 0); 
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    margin-bottom: 8px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    margin:  8px;
+    text-decoration: none;
+    color: #14501a;
+    font-size: 24px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #708a69; 
+    transition: .5s;
+}
+
+
+  
+
+
+
+
+/*hover effect*/ 
+
+.parent{
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.child{
+  background-size: cover;
+  transition: all 1.1s;
+  border-radius: 5px;
+}
+
+.parent:hover .child{
+  transform: scale(1.2);
+  z-index: 2;
+  transition: .5s;
+}
+
+
+
+/* Styles for the newsletter form */
+.main-newsletter {
+  text-align: center;
+  background-color: rgb(239, 255, 237);
+  padding: 20px; 
+  margin-top: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(42, 42, 42, 0.5);
+
+}
+.newsletter-btn {
+  display: none; 
+}
+.newsletter {
+  display: inline-block; 
+  padding: 20px;
+  margin-top: 30px; 
+}
+.newsletter-body p {
+  font-weight: bolder;
+  margin-bottom: 0; 
+  color: black;
+  font-size: 40px;
+  margin-left: 130px;
+}
+.newsletter-body-sentence p {
+  color: black; 
+  text-align: center;
+  margin-bottom: 0; 
+  margin-left: 50px;
+  margin-top: 40px;
+}
+.newsletter-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.newsletter-form button[type="submit"] {
+  background-color: rgb(48, 90, 51);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+.newsletter-form button[type="submit"]:hover {
+  background-color: rgb(48, 90, 51);
+}
+.newsletter-close-btn {
+  display: block;
+  margin-top: 10px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

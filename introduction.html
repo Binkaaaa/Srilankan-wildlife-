@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="introduction.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,800;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>Wildlife in Sri Lanka</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="main.js"></script>
+</head>
+<!--The three sub-sections-->   
+<body>
+<!--Background picture and the navigation bar belongs to this section.-->
+    <section class="header" id="introhdr">
+        <nav class="sticky">
+            <section class="logo">
+            <a href="index.html"><img src="images/flora--fauna-high-resolution-logo-transparent.png" alt="logo"></a>
+            </section>
+            <hr class="separator">
+            <section class="topnav"><b>
+                <a href="index.html">Home</a>
+                <a class="active" href="introduction.html">Introduction </a>
+                <a href="conserve.html"> Conservation</a>
+                <section class="dropdown">
+                    <button class="dropbtn"><a href= #><b>Animals ▾</b></a></button>
+                    <section class="dropdown-content">
+                      <a href="indigenous.html"> Indigenous Animals </a>
+                      <a href="leopards.html">Leopards</a>
+                    </section>  
+                </section>
+                <section class="dropdown">
+                    <button class="dropbtn"><a href= #><b>National Parks ▾</b></a></button>
+                    <section class="dropdown-content">
+                      <a href="yala.html">Yala Park</a>
+                      <a href="wilpaththu.html">Wilpaththu Park</a>
+                    </section>
+                </section>
+            <a href="contact.html" id="button">Contact</a>
+        </b></section>
+        <section class="login"><b>
+            <a href="login.html"> Login</a>
+        </b></section>
+    </nav>
+    </section>
+
+    <div x-data="introductionData">
+    <!-- Suitable content about different wildlife locations -->
+    <section class="locations">
+        <p x-text="location1"  contenteditable="false"></p>
+    </section>
+    <!-- Suitable content about different wildlife locations -->
+    <section class="nature">
+        <section class="intro_box">
+            <h3 x-text="question1"  contenteditable="false"></h3>
+            <p x-text="answer1"  contenteditable="false"></p>
+        </section>
+        <section class="nature_content">
+            <section class="intro_content">
+                <h4 x-text="title1"  contenteditable="false"></h4>
+                <p x-text="description1"  contenteditable="false"></p>
+            </section>
+            <img src="images/horton plains image 2.jpg" alt="Horton Plains">
+        </section>
+        <section class="more_content" id="hortonhdr">
+            <p x-text="para1"  contenteditable="false"></p>
+        </section>
+    </section>
+    <section class="sinharaja">
+        <h3 x-text="title2"  contenteditable="false"></h3>
+        <section class="parent">
+        <section class="child">
+            <img src="images/sinharaja bg 1.avif" alt="Sinharaja rainforest">
+        </section>
+        </section>
+        <p x-text=" para2"  contenteditable="false"></p>
+        <section class="sinharaja_content" id="sinharajahdr">
+            <p x-text="para3"  contenteditable="false"></p>
+        </section>
+    </section>
+        <section class="minneriya">
+            <h3 x-text="title3"  contenteditable="false"></h3>
+            <p x-text=" para4"  contenteditable="false"></p>
+            <section class="parent">
+            <section class="child">
+                <img src="images/minneriya bg.webp" alt="Minneriya national park">
+            </section>
+            </section>
+                <section class="minneriya_content">
+                    <p x-text="para5"  contenteditable="false"></p>
+                </section>
+        </section>
+        <hr>
+
+</div>
+<script>
+    const introductionData = {
+        "location1": '',
+        "question1": '',
+        "answer1": '',
+        "title1": '',
+        "description1": '',
+        "para1": '',
+        "title2" : '',
+        "para2" :  '',
+        "para3" :  '',
+        "title3" : '',
+        "para4" :  '',
+        "para5" :  '',
+
+    };
+
+    fetch('introduction.json')
+        .then(response => response.json())
+        .then(data => {
+            introductionData.location1 = data.location1;
+            introductionData.question1 = data.question1;
+            introductionData.answer1 = data.answer1;
+            introductionData.title1 = data.title1;
+            introductionData.description1 = data.description1;
+            introductionData.para1 = data.para1;
+            introductionData.title2 = data.title2;
+            introductionData. para2 = data.para2;
+            introductionData. para3 = data.para3;
+            introductionData.title3 = data.title3;
+            introductionData. para4 = data.para4;
+            introductionData. para5 = data.para5;
+
+            const jsonDataString = JSON.stringify(introductionData);
+
+            localStorage.setItem("introductionData",jsonDataString);
+
+            let introductionDataData = JSON.parse(localStorage.getItem("introductionData"));
+
+            console.log(introductionDataData);
+        })
+        .catch(error => console.error('Error fetching data:', error));
+</script>
+
+<!-- Table -->
+    <section class="table" >
+    <h3 contenteditable="false">Sri Lankan Wildlife Location's Animals</h3>
+    <table>
+        <thead>
+            <tr>
+                <th contenteditable="false">Location</th>
+                <th contenteditable="false">Map</th>
+                <th contenteditable="false">Animal</th>
+                <th contenteditable="false">Interesting Facts</th>
+                <th contenteditable="false">Picture</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td contenteditable="false">Sinharaja</td>
+                <td><img src="images/sinhraja map.jpg" alt="Sinharaja map"></td>
+                <td contenteditable="false">Leopard</td>
+                <td contenteditable="false">Endangered species, known for its distinctive coat. Contribute to the balance of the ecosystem by controlling the population of herbivores.</td>
+                <td><img src="images/sinhraja leopard.png" alt="Leopard"></td>
+            </tr>
+            <tr>
+                <td contenteditable="false">Horton Plains</td>
+                <td><img src="images/horton plains map.jpg" alt="Horton plains map"></td>
+                <td contenteditable="false">Sri Lankan Sambar Deer</td>
+                <td contenteditable="false">Native deer species with impressive antlers. Play a crucial role in shaping vegetation and maintaining the balance of ecosystems.</td>
+                <td><img src="images/horton plains deer.jpg" alt="Sambar Deer"></td>
+            </tr>
+            <tr>
+                <td contenteditable="false">Minneriya National Park</td>
+                <td><img src="images/minneriya map.png" alt="Minneriya map"></td>
+                <td contenteditable="false">Asian Elephant</td>
+                <td contenteditable="false">Home to a large population of elephants, often seen in herds. Sri Lankan elephant is the largest of the three subspecies of Asian elephants.</td>
+                <td><img src="images/elephant.jpg" alt="Asian Elephant"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" class="footer" contenteditable="false">Table 01: Summary of the this page</td>
+            </tr>
+        </tfoot>
+    </table> 
+    </section>
+    <button class="edit-button" onclick="toggleEditing()">Edit Text</button>
+    <button class="save-button" onclick="saveChanges()">Save Changes</button>
+
+    <script src="main.js"></script>
+<!-- Footer -->
+    <footer> 
+        <section class="container">
+            <section class="footer-content">
+                <h2 style="padding-bottom: 50px;"> Contact Us</h2>
+                <p><b style="font-size: 20px;">Email:</b> dg@dwc.gov.lk</p>
+                <p><b style="font-size: 20px;">Phone:</b> +94 11 2 888 585 </p>
+                <p><b style="font-size: 20px;">Address:</b><br>  Department of Wildlife Conservation,
+                                                <br>811A, Jayanthipura,
+                                                <br>Battaramulla, Sri Lanka.</p>
+            </section>
+            <section class="footer-content">
+            <h2> References </h2>
+            <ul class="list" style="font-size: 17px;">
+            <li><a href="https://srilankaunbound.com.au/blog/category/wildlife/" target="_blank">Sri Lankan Bound website</a></li>
+            <li><a href="https://www.srilankansafari.com/safari-blog.php" target="_blank">Sri Lankan Safari website</a></li>
+            <li><a href="https://www.pettitts.co.uk/blog/sri-lanka-wildlife" target="_blank">Petitts website</a></li>
+            <li><a href="https://www.srilankainstyle.com/blog/top-10-sri-lanka-wildlife-experiences" target="_blank">Sri Lanka in Style</a></li>
+            </ul>
+        </section>
+    </section>
+    <section class="main-newsletter">
+        <section class="side-newsletter">
+        <section class="container_newsletter">
+            <a href="#" class="newsletter-btn">Newsletter</a>
+            <section class="newsletter">
+                <section class="newsletter-body">
+                    <p style="  margin-left: 160px; "><u>NEWSLETTER</u></p>
+                </section>
+                <section class="newsletter-body-sentence">
+                    <p style=" margin-top: -20px;"> Subscribe to our newsletter for updates and to know more information</p>
+                </section>
+                <div x-data="{ email: '', subscriptions: [] }" x-init="subscriptions = JSON.parse(localStorage.getItem('newsletterSubscriptions')) || []">
+                    <section class="newsletter-form">
+                      <form @submit.prevent="
+                        subscriptions.push(email);
+                        localStorage.setItem('newsletterSubscriptions', JSON.stringify(subscriptions));
+                        email = '';
+                        alert('You have been subscribed successfully!');
+                      ">
+                        <input type="email" x-model="email" placeholder="Enter your email.." required>
+                        <button type="submit">Subscribe</button>
+                      </form>
+                    </section>
+                  </div>
+                <a href="#" class="newsletter-close-btn"> You can unsubscribe at any time</a>
+            </section>
+        </section>
+        </section>
+
+        <section class="social-icons">
+            <a class="btn" href="https://www.facebook.com/" target="_blank"><iconify-icon icon="ic:baseline-facebook"></iconify-icon></a>
+            <a class="btn" href="https://www.instagram.com/" target="_blank"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+            <a class="btn" href="https://www.twitter.com/" target="_blank"><iconify-icon icon="mdi:twitter"></iconify-icon></iconify-icon></a>
+            <a class="btn" href="https://www.youtube.com/" target="_blank"><iconify-icon icon="mdi:youtube"></iconify-icon></a>
+        </section>
+    </footer>
+    </div>
+    <script src="main.js"></script> 
+
+</body>
+</html>

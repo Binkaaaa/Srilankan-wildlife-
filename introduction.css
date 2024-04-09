@@ -1,0 +1,389 @@
+/* introduction page */
+
+#introhdr{
+    background-image: url(images/introduction\ bg.jpg); 
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+    min-height: 580px;
+  }
+  
+  .locations p{
+    padding-top: 90px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 120px;
+    font-size: 33px;
+    font-weight: 300;
+    line-height: 50px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+  }
+  
+  .nature{
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 100px;
+  }
+  
+  .intro_box{
+    color: white;
+    padding-top: 120px;
+    padding-bottom: 160px;
+    background-color: rgb(21, 51, 24);
+  }
+  
+  .intro_box h3{
+    align-items: center;
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    padding-left: 340px;
+  }
+  
+  .intro_box p{
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    padding-left: 310px;
+    word-spacing: 4px;
+  }
+  
+  .nature_content{
+    margin-left: 150px;
+    margin-bottom: 100px;
+  }
+  
+  .intro_content{
+    width: 500px; 
+    padding: 20px;
+    border: 1px solid white;
+    margin: 20px;
+    margin-top: -120px;
+    background-color: white;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .intro_content h4{
+    align-items: left;
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    position: relative;
+  }
+  
+  .intro_content h4::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 60px; 
+    background-color: rgb(9, 89, 44);
+    position: absolute;
+    top: 100%;
+    margin-top: 5px;
+    margin-left: 220px;
+  }
+  
+  .intro_content p{
+    font-size: 16px;
+    text-align: center;
+    padding-top: 40px;
+  }
+  
+  .nature_content img{
+    padding-left: 621px;
+    margin-top: -286px;
+    width: 550px;
+    height: 341px;
+  }
+  
+  .nature_content::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .intro_para{
+    width: 50%;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-left: 650px;
+    font-size: 30px;
+  }
+  
+  #hortonhdr{
+    background-image: url(images/horton\ plains\ bg\ 3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.8); 
+  }
+  
+  .more_content p{
+    padding-top: 150px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 150px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-family: 'Playfair Display', serif;
+    line-height: 30px;
+    word-spacing: 5px;
+    font-size:  20px;
+    text-align: center;
+  }
+  
+  .more_content img{
+    padding-top: 20px;
+    padding-left: 500px;
+    padding-right: 300px;
+    padding-bottom: 70px;
+    width: 500px;
+  }
+  
+  .sinharaja{
+    padding-top: 10px;
+    padding-bottom: 100px;
+  }
+  
+  .sinharaja h3{
+    padding-top: 10px;
+    padding-left: 150px;
+    padding-bottom: 10px;
+    font-size: 45px;
+  }
+  @media only screen and (max-width: 2560px){
+    .nature_content{
+    }
+  
+  }
+    
+  
+
+  .sinharaja img{
+    width: 60%;
+    padding-top: 70px;
+    padding-left: 300px;
+    padding-right: 400px;
+  }
+  
+  .sinharaja h3:hover {
+    color: rgb(9, 89, 44); 
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+  }
+  
+  .sinharaja h3:hover::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 80%;
+    background-color: rgb(9, 89, 44);
+    position: absolute;
+    top: 100%;
+    animation: underline-animation 0.3s ease-in-out forwards;
+  }
+  
+  @keyframes underline-animation {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+  
+  .letter{
+    font-size: 80px;
+    padding-left: 50px;
+  }
+  
+  .sinharaja p{
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 60px;
+    font-size: 18px;
+    line-height: 30px;
+    word-spacing: 4px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  #sinharajahdr{
+    background-image: url(images/sinharaja\ bg\ 2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.5); 
+  }
+  
+  .sinharaja_content{
+    padding-top: 120px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 120px;
+  }
+  
+  .symbol{
+    font-size: 100px;
+  }
+  
+  .sinharaja_content p{
+    color: white;
+    font-weight: bolder;
+    font-family: 'Playfair Display', serif;
+    line-height: 50px;
+    word-spacing: 15px;
+    font-size:  40px;
+    text-align: center;
+  }
+  
+  .minneriya{
+    padding-top: 10px;
+    padding-bottom: 100px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .minneriya h3{
+    padding-left: 390px;
+    font-size: 60px;
+  }
+  
+  .minneriya h3:hover {
+    color: rgb(9, 89, 44); 
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+  }
+  
+  .minneriya h3:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: rgb(9, 89, 44);
+    position: absolute;
+    top: 100%;
+  }
+  
+  .minneriya p{
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    line-height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+  
+  }
+  .minneriya img{
+    width: 60%;
+    padding-left: 320px;
+  }
+  
+  .minneriya_content p{
+    text-align: justify;
+    font-size: 18px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    line-height: 40px;
+  }
+  
+  .table h3{
+    padding-top: 75px;
+    padding-bottom: 10px;
+    padding-left: 75px;
+    font-size: 40px;
+  }
+  
+  .table h3:hover {
+    color: rgb(9, 89, 44); 
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+  }
+  
+  .table h3:hover::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 90%;
+    background-color: rgb(9, 89, 44);
+    position: absolute;
+    top: 100%;
+    animation: underline-animation 0.3s ease-in-out forwards;
+  }
+  
+  .table table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 60px;
+    margin-left: 75px;
+    margin-right: 50px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 30px;
+    word-spacing: 3px;
+  }
+  
+  .table th, td {
+    border: 3px solid #ddd;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: rgba(31, 82, 34, 0.9);
+    font-family: 'Playfair Display', serif;
+    color: white;
+  }
+  
+  .table tr:hover{
+    color: rgb(14, 63, 36);
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+    font-weight: bold;
+  }
+  
+  .table tr:hover::after{
+    color: black;
+    content: '';
+    display: block;
+    position: absolute;
+  }
+  
+  .table img {
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+  }
+  
+  .table .footer {
+    text-align: center;
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  
+  .table tbody tr:hover {
+    background-color: rgba(6, 49, 9, 0.2);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .table tbody tr:hover::after {
+    background-color: rgba(6, 49, 9, 0.3); 
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .table img {
+    opacity: 0.9;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .table img:hover {
+    opacity: 1;
+  }

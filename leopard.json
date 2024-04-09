@@ -1,0 +1,31 @@
+{
+    "venuesIntro":  "Where Sri Lanka's Leopards Thrive?",
+    "venuesDescription": "Within the rich and varied landscapes of Sri Lanka, leopards thrive, adapting to and flourishing in diverse ecosystems across the country.",
+    "overlay1": "Horton Plains",
+    "overlay2": "Yala National Park",
+    "overlay3": "Wilpaththu National Park",
+    "leoFacts1": "Sri Lankan leopard (Panthera pardus kotiya) is a subspecies native to Sri Lanka, featuring a lighter coat with larger, more widely spaced rosettes compared to other leopards.",
+    "leoFacts2": "Classified as endangered, these leopards face threats such as habitat loss, human-wildlife conflict, and poaching, prompting conservation efforts to protect their dwindling population. ",
+    "threat1Title" : "Habitat Loss and Fragmentation",
+    "threat1Description" : "Description: Habitat loss and fragmentation pose a significant threat to leopard populations in Sri Lanka.",
+    "threat1Consequences" : "Consequences: Leopards face challenges in finding sufficient prey, establishing territories, and maintaining genetic diversity.",
+    "threat1Reduce" : " Mechanisms to Reduce the Threat:",
+    "ReduceThreat" : [
+        "Protected Areas and Corridors",
+        "Land-Use Planning",
+        "Community Engagement"
+    ],
+    "map1" : "Conservation Institution in Sri Lanka link(WWCT):",
+    "threat2Title" : "Poaching and Illegal Wildlife Trade",
+    "threat2Description" : "Description: Poaching for leopard skins, bones, and other body parts, driven by the illegal wildlife trade, remains a critical threat to leopard populations in Sri Lanka.",
+    "threat2Consequences" : "Consequences: The poaching of leopards disrupts the natural balance of ecosystems, leads to a decline in leopard numbers, and can result in imbalances in prey populations." ,
+    "threat2Reduce" : "Mechanisms to Reduce the Threat:",
+    "poaching" : [
+        "Anti-Poaching Measures",
+        "Legislation and Enforcement",
+        "Community Reporting Systems"
+    ],
+    "map2" : "Department of Wildlife Conservation Sri Lanka link:"
+
+}
+

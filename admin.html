@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Wildlife in Sri Lanka</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <section class="header" id="homehdr">
+        <nav class="sticky">
+            <section class="logo">
+            <a  class="active" href="index.html"><img src="images/flora--fauna-high-resolution-logo-transparent.png" alt="logo"></a>
+            </section>
+            <hr class="separator">
+            <section class="topnav"><b>
+                <a class="active" href="index.html">Home</a>
+                <a href="introduction.html">Introduction </a>
+                <a href="conserve.html"> Conservation</a>
+                <section class="dropdown">
+                    <button class="dropbtn"><a href= #><b>Animals ▾</b></a></button>
+                    <section class="dropdown-content">
+                      <a href="indigenous.html"> Indigenous Animals </a>
+                      <a href="leopards.html">Leopards</a>
+                    </section>  
+                </section>
+                <section class="dropdown">
+                    <button class="dropbtn"><a href= #><b>National Parks ▾</b></a></button>
+                    <section class="dropdown-content">
+                      <a href="yala.html">Yala Park</a>
+                      <a href="wilpaththu.html">Wilpaththu Park</a>
+                    </section>
+                </section>
+            <a href="contact.html" id="button">Contact</a>
+        </b></section>
+        <section class="login"><b>
+            <a href="login.html"> Login</a>
+            </b></section>
+        </nav>
+    </section>
+    <div class="container">
+        <div class="loginAdmin">
+            <h1>Admin Panel</h1>
+            <img src="images/admin image.webp">
+            <p><b>User Name: </b>Admin</p>
+            <p><b>Email:</b>Admin@admin</p>
+            <div class="subscribe-btn">
+                <button onclick="goToSubscription()">Go to Subscription</button>
+            </div>
+        </div>
+    <div class="table">
+        <table id="subscriptionsTable" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="subscriptionList">
+                <!-- Table rows for subscriptions will be added dynamically here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+    <script src="admin.js"></script>
+</body>
+</html>

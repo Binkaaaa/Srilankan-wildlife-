@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="conserve.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,800;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>Wildlife in Sri Lanka</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Include Alpine.js-->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="main.js"></script>
+</head>
+<!--The three sub-sections-->   
+<body>
+<!--Background picture and the navigation bar belongs to this section.-->
+    <section class="header" id="conshdr">
+        <nav class="sticky">
+            <section class="logo">
+            <a href="index.html"><img src="images/flora--fauna-high-resolution-logo-transparent.png" alt="logo"></a>
+            </section>
+            <hr class="separator">
+            <section class="topnav"><b>
+                <a href="index.html">Home</a>
+                <a href="introduction.html">Introduction </a>
+                <a class="active" href="conserve.html"> Conservation</a>
+                <section class="dropdown">
+                    <button class="dropbtn"><a href= #><b>Animals ▾</b></a></button>
+                    <section class="dropdown-content">
+                      <a href="indigenous.html"> Indigenous Animals </a>
+                      <a href="leopards.html">Leopards</a>
+                    </section>  
+                </section>
+                <section class="dropdown">
+                    <button class="dropbtn"><a href= #><b>National Parks ▾</b></a></button>
+                    <section class="dropdown-content">
+                      <a href="yala.html">Yala Park</a>
+                      <a href="wilpaththu.html">Wilpaththu Park</a>
+                    </section>
+                </section>
+            <a href="contact.html" id="button">Contact</a>
+        </b></section>
+        <section class="login"><b>
+            <a href="login.html"> Login</a>
+            </b></section>
+        </nav>
+    </section>
+<!-- Brief introduction about DWC-->
+    <div x-data = "conserveData">
+        <section class="title"> <!-- will be creating this later-->
+            <h3 x-text = "conserveIntro" contenteditable="false"></h3>
+            <p x-text = "conserveDescription" contenteditable="false"></p>
+            <img src="images/dep logoo.jpg" alt="DWC logo">
+        </section>
+        <hr>
+        <section class="mission">
+            <h3 x-text = "missionIntro" contenteditable="false"></h3>
+            <p x-text = "missionDescription" contenteditable="false"></p>
+                <section class="parent">
+                <section class="child">
+                    <img src="images/dwc mission.jpg" alt="DWC workers">
+                </section>
+            </section>
+        </section>
+        <hr>
+<!--Flexbox-->
+        <section class="flexbox">
+            <h3 x-text="flexboxIntro" class="topic"></h3>
+            <section class="gallery">
+                <section class="column">
+                <section class="photo">
+                    <section class="parent">
+                    <section class="child">
+                    <img src="images/flexbox03.jpg">
+                    </section>
+                    </section>
+                </section>
+                <section class="photo">
+                    <section class="parent">
+                    <section class="child">
+                    <img src="images/flex4.jpg">
+                    </section>
+                    </section>
+                </section>
+                <section class="photo">
+                    <section class="parent">
+                    <section class="child">
+                    <img src="images/flexbox07.jpg">
+                    </section>
+                    </section>
+                </section>
+                </section>
+                <section class="column">
+                <section class="photo">
+                    <section class="parent">
+                    <section class="child">
+                    <img src="images/flex2.jpg">
+                    </section>
+                    </section>
+                </section>
+                <section class="photo">
+                    <section class="parent">
+                    <section class="child">
+                    <img src="images/flexbox04.jpg">
+                    </section>
+                    </section>
+                </section>
+                </section>
+                <section class="column">
+                <section class="photo">
+                    <section class="parent">
+                    <section class="child">
+                    <img src="images/flexbox13.jpg">
+                    </section>
+                    </section>
+                </section>
+                <section class="photo">
+                    <section class="parent">
+                    <section class="child">
+                    <img src="images/flex11.jpg">
+                    </section>
+                    </section>
+                </section>
+                <section class="photo">
+                    <section class="parent">
+                    <section class="child">
+                    <img src="images/flexbox08.jpg">
+                    </section> 
+                    </section>
+                </section>
+                </section>
+            </section>
+            <section class="btnBox">
+                <a href="imagegrid.html">More</a>
+            </section>
+        </section>
+    </section>
+        <hr>
+<!-- DWC location: google map-->
+        <section class="map">
+            <h3 x-text="mapIntro" contenteditable="false"></h3>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31688.18501817799!2d79.89774490464494!3d6.887833048883672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1704087041013!5m2!1sen!2slk" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </section>
+    </div>
+    <hr>
+    <script>
+        // creating the structure of data object
+        const conserveData = {
+            conserveIntro: '',
+            conserveDescription: '',
+            missionIntro : '',
+            missionDescription : '' 
+        };
+
+        // fetch the JSON data
+        fetch ('conserve.json')
+        .then (response => response.json())
+        .then (data =>{
+            conserveData.conserveIntro = data.conserveIntro ;
+            conserveData.conserveDescription = data.conserveDescription ;
+            conserveData.missionIntro = data.missionIntro ;
+            conserveData.missionDescription = data.missionDescription ;
+            conserveData.flexboxIntro = data.flexboxIntro ;
+            conserveData.mapIntro = data.mapIntro ;
+
+
+            const jsonDataString = JSON.stringify(conserveData);
+
+            localStorage.setItem("conserveData",jsonDataString);
+
+            let conserveDataData = JSON.parse(localStorage.getItem("conserveData"));
+
+            console.log(conserveDataData);
+        }) 
+
+        .catch (error => console.error('Error fetching data;',error));
+    </script>
+     <button class="edit-button" onclick="toggleEditing()">Edit Text</button>
+     <button class="save-button" onclick="saveChanges()">Save Changes</button>
+ 
+     <script src="main.js"></script>
+<!-- Footer -->
+    <footer> 
+        <section class="container">
+            <section class="footer-content">
+                <h2 style="padding-bottom: 50px;"> Contact Us</h2>
+                <p> <b style="font-size: 20px;">Email:</b> dg@dwc.gov.lk</p>
+                <p> <b style="font-size: 20px;">Phone:</b> +94 11 2 888 585 </p>
+                <p> <b style="font-size: 20px;">Address:</b><br>  Department of Wildlife Conservation,
+                                                <br>811A, Jayanthipura,
+                                                <br>Battaramulla, Sri Lanka.</p>
+            </section>
+            <section class="footer-content">
+            <h2> References </h2>
+            <ul class="list" style="font-size: 17px;">
+            <li><a href="https://srilankaunbound.com.au/blog/category/wildlife/" target="_blank">Sri Lankan Bound website</a></li>
+            <li><a href="https://www.srilankansafari.com/safari-blog.php" target="_blank">Sri Lankan Safari website</a></li>
+            <li><a href="https://www.pettitts.co.uk/blog/sri-lanka-wildlife" target="_blank">Petitts website</a></li>
+            <li><a href="https://www.srilankainstyle.com/blog/top-10-sri-lanka-wildlife-experiences" target="_blank">Sri Lanka in Style</a></li>
+            </ul>
+        </section>
+    </section>
+    
+    <section class="main-newsletter">
+        <section class="side-newsletter">
+        <section class="container_newsletter">
+            <a href="#" class="newsletter-btn">Newsletter</a>
+            <section class="newsletter">
+                <section class="newsletter-body">
+                    <p style="  margin-left: 160px; "><u>NEWSLETTER</u></p>
+                </section>
+                <section class="newsletter-body-sentence">
+                    <p style=" margin-top: -20px;"> Subscribe to our newsletter for updates and to know more information</p>
+                </section>
+                <div x-data="{ email: '', subscriptions: [] }" x-init="subscriptions = JSON.parse(localStorage.getItem('newsletterSubscriptions')) || []">
+                    <section class="newsletter-form">
+                      <form @submit.prevent="
+                        subscriptions.push(email);
+                        localStorage.setItem('newsletterSubscriptions', JSON.stringify(subscriptions));
+                        email = '';
+                        alert('You have been subscribed successfully!');
+                      ">
+                        <input type="email" x-model="email" placeholder="Enter your email.." required>
+                        <button type="submit">Subscribe</button>
+                      </form>
+                    </section>
+                  </div>
+                <a href="#" class="newsletter-close-btn"> You can unsubscribe at any time</a>
+            </section>
+        </section>
+        </section>
+
+        <section class="social-icons">
+            <a class="btn" href="https://www.facebook.com/" target="_blank"><iconify-icon icon="ic:baseline-facebook"></iconify-icon></a>
+            <a class="btn" href="https://www.instagram.com/" target="_blank"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+            <a class="btn" href="https://www.twitter.com/" target="_blank"><iconify-icon icon="mdi:twitter"></iconify-icon></iconify-icon></a>
+            <a class="btn" href="https://www.youtube.com/" target="_blank"><iconify-icon icon="mdi:youtube"></iconify-icon></a>
+        </section>
+    </footer>
+    </div>
+    <script src="main.js"></script> 
+</body>
+</html>

@@ -1,0 +1,120 @@
+
+
+body{
+    background: url("./images/flexbox15.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form {
+    background-color: #ffffff;
+    padding: 50px;
+    padding-left: 35px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 300px;
+}
+.form--message {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-bottom: 16px;
+}
+.form--title{
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.form--message--success{
+    color: rgb(9, 89, 44);
+}
+.form--input--error{
+    color: red;
+    border-color: red;
+}
+.form--input-group {
+    margin-bottom: 1rem;
+}
+.form--input{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeee;
+    transition: background 0.2s, border-color 0.2;
+}
+
+.form--input:focus{
+    border-color: rgb(9, 89, 44);
+    background: #ffffff;
+}
+
+.form >*:first-child{
+    margin-top: 0;
+}
+
+.form >*:last-child{
+    margin-bottom: 0;
+}
+
+.form--input-error-message {
+    color: red;
+    border-color: red;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    
+}
+.form--button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: rgb(9, 89, 44);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+
+}
+.form--button:hover {
+    background-color: #262626;
+}
+.form--button:active{
+    transform: scale(0.98);
+}
+.form--text {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 700 ;
+}
+.form--link {
+    color: rgb(24, 29, 26);
+    text-decoration: none;
+    cursor: pointer;
+}
+.form--link:hover {
+    text-decoration: underline;
+}
+
+.form--hidden{
+    display: none;
+}
+.form--input--error {
+    border: 1px solid red; 
+}
